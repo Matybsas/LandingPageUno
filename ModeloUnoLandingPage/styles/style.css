@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-image: url(../image/GenteTrabajando.jpg);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-attachment: fixed;
+}
+/**COLORES PARA LA WEB*/
+:root{
+    --color-backgraund-header: #fff;
+    --color-box-shadown-header:#111111;
+    --color-nav-text: #000000;
+    --color-nav-text-hover: #be9aad;
+    --color-backgraund-scroll:#be9aadac;
+    --color-backgraund-cards: #f7d5cc;
+    --color-border-input-form:#be9aad;
+}
+
+/**SCROLL*/
+.conteiner__Scroll_up a {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 70px;
+    position: fixed;
+    background-color: var(--color-backgraund-scroll);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.conteiner__Scroll_up img {
+    width: 95%;
+    height: auto;
+
+}
+
+/** MENU */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-backgraund-header);
+    box-shadow: 2px 2px 7px var(--color-box-shadown-header);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner__logo {
+    width: 25%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.conteiner__logo img {
+    height: 60px;
+}
+
+/**MENU*/
+.navBar {
+    width: 60%;
+    height: auto;
+    margin-left: 20px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.navBar li a {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 5px transparent #eccece;
+    padding-bottom: 24px;
+}
+
+.navBar li a:hover {
+    color: #eccece;
+    
+    border-bottom: 5px solid #eccece;
+    padding-bottom: 24px;
+}
+
+
+
+
+
+
+/**BODY*/
+.conteiner__body {
+    width: 100%;
+    height: 100%;
+}
+
+.conteiner__Servicios,
+.conteiner__Nosotros,
+.conteiner__Contacto {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #00000075;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.conteiner__image_Servicio {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner__image_Servicio img {
+    width: 90%;
+    border: 10px solid white;
+}
+
+.conteiner__Text_Servicios {
+    width: 50%;
+    height: auto;
+    padding: 55px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner__Text_Servicios h2 {
+    margin-bottom: 30px;
+    font-size: 4rem;
+}
+
+.conteiner__Text_Servicios p {
+    font-size: 1.5rem;
+}
+
+.conteiner__Nosotros {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__Nosotros {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.parrafo__Nosotros {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+/**SECCION NUESTRA EMPRESA*/
+.conteiner__general__nosotros {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.conteiner__Card {
+    width: 32%;
+    height: auto;
+    border-radius: 5px;
+    background-color: var(--color-backgraund-cards);
+    display: flex;
+    margin-right: 10px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__Card hr {
+    width: 80%;
+    height: 1px;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.conteiner__image {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__image img {
+    width: 80%;
+}
+
+.conteiner__Text {
+    text-align: center;
+
+}
+
+/**CONTACTO*/
+.conteiner__Contacto {
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Formulario {
+    width: 70%;
+    height: auto;
+    background-color: rgba(33, 33, 33, 0.775);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__informacion {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form input,
+form button {
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    margin: 15px 0;
+    border: 2px solid var(--color-border-input-form);
+    border-radius: 50px;
+}
+form button:hover{
+    background-color: #f7d5cc;
+    box-shadow: 2px 2px 7px white;
+    border: none;
+}
+form textarea {
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    margin: 15px 0;
+    border: 2px solid var(--color-border-input-form);
+    border-radius: 10px;
+}
+.conteiner__Redes__Sociales{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.conteiner__Redes__Sociales a{
+    margin-right: 10px;
+}
+.conteiner__Redes__Sociales a img{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+/**CHAT WHATSAPP*/
+.chat__Whats__App {
+    width: 15%;
+    height: auto;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat__Whats__App a img {
+    height: 40px;
+}
+
+
+/**FOOTER*/
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 7px black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.conteiner__Redes__sociales {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Redes__sociales a {
+    margin: 8px;
+
+}
+
+.conteiner__Redes__sociales a img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__Redes__sociales a:hover {
+    border: 3px solid var(--color-border-input-form);
+    border-radius: 50px;
+}
+
+
+footer hr {
+    width: 70%;
+    height: 1px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+
+}
+footer p{
+ text-align: center;
+}
+
+.openMenu{
+    opacity: 1 !important;
+    
+}
+
+
+
+@media (max-width: 1024px) {
+
+    /**SERVICIOS*/
+    .conteiner__Servicios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .conteiner__image_Servicio {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .conteiner__Text_Servicios {
+        width: 90%;
+        height: auto;
+        padding: 30px 0 0 0;
+        text-align: justify;
+    }
+
+    /**NUESTRA EMPRESA*/
+    .conteiner__Nosotros {
+        width: 100%;
+        height: auto ;
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo__Nosotros{
+        width: 100%;
+    }
+    .hr__Nosotros{
+        width: 80%;
+       border: 2px solid black;
+    }
+    .parrafo__Nosotros{
+        width: 100%;
+    }
+
+    .conteiner__general__nosotros {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner__Card {
+        width: 70%;
+        height: auto;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteiner__Formulario {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .conteiner__informacion {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-family: 'Roboto Slab', serif;
+        background-image: url(../image/GenteTrabajando.jpg);
+        background-repeat: no-repeat;
+        background-size: 300%;
+    }
+       
+    /**MENU*/
+    header{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBar {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        background-color: rgb(255, 255, 255);
+        opacity: 0;
+    }
+
+    .navBar ul {
+        margin:0 0 20px 20px;
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: start;
+       
+
+    }
+
+    .navBar li a {
+        
+        color: var(--Title-color);
+        font-size: 1.5em;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: none;
+        padding-bottom: 0;
+      
+    }
+
+    .navBar li a:hover {
+        
+        color:#be9aad;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+   
+    /**MENU HAMBURGUESA*/
+    .toogle__nav {
+        cursor: pointer;
+        width: 45%;
+        height: 50px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .toogle__nav span {
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        background-color: #000000;
+        top: 0;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+
+    .toogle__nav.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toogle__nav.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 12px;
+        background-color: red;
+    }
+
+    .toogle__nav.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -12px;
+        background-color: red;
+    }
+    .conteiner__Text_Servicios{
+        width: 90%;
+        height: auto;
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner__Text_Servicios h2{
+        font-size: 8vw;
+    }
+    .conteiner__Text_Servicios p{
+        font-size: 4vw;
+        text-align: justify;
+    }
+
+    /**FORMULARIO CONTACTO*/
+    .conteiner__Contacto  {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      
+    }
+    .conteiner__Formulario {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.775);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+   form{
+    padding: 0;
+   } 
+   form input,
+   form textarea,
+   form button
+   {
+        width: 95%;
+    }
+}
