@@ -377,7 +377,15 @@ footer hr {
 footer p{
  text-align: center;
 }
-
+footer p a{
+    text-decoration: none;
+    color: rgb(243, 175, 48);
+    font-weight: 700;
+}
+footer p a:hover{
+    color:rgb(12, 165, 185);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
 .openMenu{
     opacity: 1 !important;
     
