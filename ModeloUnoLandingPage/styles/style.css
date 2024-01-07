@@ -384,7 +384,7 @@ footer p a{
 }
 footer p a:hover{
     color:rgb(12, 165, 185);
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 .openMenu{
     opacity: 1 !important;
